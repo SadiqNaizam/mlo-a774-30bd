@@ -68,9 +68,9 @@ const LiveLocationMap: React.FC<LiveLocationMapProps> = ({
       </CardHeader>
       <CardContent>
         {/* Map Canvas: A container that represents the map area. */}
-        <div className="relative w-full h-80 md:h-96 bg-muted rounded-lg overflow-hidden border">
+        <div className="relative w-full h-80 md:h-96 bg-muted/50 dark:bg-muted/20 rounded-lg overflow-hidden border">
           
-          {/* SVG to draw a dashed line representing the delivery route. */}
+          {/* SVG to draw a dashed line representing the delivery route. */}\
           <svg className="absolute w-full h-full" width="100%" height="100%">
             <line
               x1={`${restaurantLocation.left}%`}
