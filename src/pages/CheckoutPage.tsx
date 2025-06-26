@@ -81,7 +81,7 @@ const CheckoutPage = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1 py-8 md:py-12">
         <div className="container mx-auto px-4">
@@ -141,7 +141,7 @@ const CheckoutPage = () => {
                             <RadioGroupItem value={String(p)} id={`tip-${p}`} />
                             <Label htmlFor={`tip-${p}`}>{p}%</Label>
                           </div>
-                        ))}
+                        ))নিং}
                       </RadioGroup>
                     </CardContent>
                   </Card>
@@ -201,7 +201,7 @@ const CheckoutPage = () => {
                         <span>{item.name} x {item.quantity}</span>
                         <span>${(item.price * item.quantity).toFixed(2)}</span>
                       </div>
-                    ))}
+                    ))নিং}
                   </div>
                   <Separator />
                   <div className="space-y-2 text-sm">
