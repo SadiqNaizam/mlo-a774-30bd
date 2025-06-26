@@ -45,7 +45,7 @@ const OrderTrackingPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
 
       <main className="flex-grow container mx-auto px-4 py-8 sm:py-12">
@@ -62,7 +62,7 @@ const OrderTrackingPage: React.FC = () => {
           {/* Delivery Estimate & Progress Card */}
           <Card className="mb-8 shadow-sm">
             <CardHeader className="flex flex-row items-center gap-4 space-y-0">
-              <Clock className="w-8 h-8 text-orange-500" />
+              <Clock className="w-8 h-8 text-primary" />
               <div>
                 <CardTitle>Estimated Delivery Time</CardTitle>
                 <CardDescription>Approximately 15-20 minutes remaining</CardDescription>
