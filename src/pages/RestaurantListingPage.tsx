@@ -29,7 +29,7 @@ const RestaurantListingPage = () => {
   const [deliveryTime, setDeliveryTime] = useState([45]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow container py-8">
         <div className="mb-6">
@@ -75,7 +75,7 @@ const RestaurantListingPage = () => {
                             <Checkbox id={cuisine.toLowerCase()} />
                             <Label htmlFor={cuisine.toLowerCase()} className="font-normal">{cuisine}</Label>
                           </div>
-                        ))নিং}
+                        ))}\
                       </div>
                     </div>
                     <Separator />
@@ -88,7 +88,7 @@ const RestaurantListingPage = () => {
                             <Checkbox id={`star-${star}`} />
                             <Label htmlFor={`star-${star}`} className="font-normal flex items-center">{star} stars & up</Label>
                           </div>
-                        ))নিং}
+                        ))}\
                       </div>
                     </div>
                     <Separator />
@@ -116,7 +116,7 @@ const RestaurantListingPage = () => {
                         <div className="flex items-center space-x-2">
                             {['$', '$$', '$$$', '$$$$'].map(price => (
                                 <Button key={price} variant="outline" size="sm" className="flex-1">{price}</Button>
-                            ))নিং}
+                            ))}\
                         </div>
                     </div>
                   </div>
@@ -142,7 +142,7 @@ const RestaurantListingPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
               {sampleRestaurants.map((restaurant) => (
                 <RestaurantCard key={restaurant.id} {...restaurant} />
-              ))নিং}
+              ))}\
             </div>
             <Pagination className="mt-8">
               <PaginationContent>
