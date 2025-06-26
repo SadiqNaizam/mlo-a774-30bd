@@ -45,7 +45,7 @@ const OrderTrackingPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen">
       <Header />
 
       <main className="flex-grow container mx-auto px-4 py-8 sm:py-12">
