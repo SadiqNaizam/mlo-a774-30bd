@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       <div className="container flex h-16 items-center justify-between gap-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 mr-4">
-          <UtensilsCrossed className="h-6 w-6 text-orange-500" />
+          <UtensilsCrossed className="h-6 w-6 text-primary" />
           <span className="font-bold text-lg hidden sm:inline-block">Delish Delivery</span>
         </Link>
 
@@ -43,8 +43,8 @@ const Header: React.FC = () => {
             <NavLink
               to="/order-tracking"
               className={({ isActive }) =>
-                `flex items-center gap-2 text-sm font-medium transition-colors hover:text-orange-500 ${
-                  isActive ? 'text-orange-500' : 'text-muted-foreground'
+                `flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary ${
+                  isActive ? 'text-primary' : 'text-muted-foreground'
                 }`
               }
             >
