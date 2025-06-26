@@ -84,7 +84,7 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen">
       <Header />
       
       <main className="flex-grow">
@@ -92,10 +92,10 @@ const HomePage: React.FC = () => {
         <section className="relative bg-primary/10 py-20 md:py-32 text-center">
             <div 
                 className="absolute inset-0 bg-cover bg-center opacity-20"
-                style={{backgroundImage: "url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2000&auto=format&fit=crop')"}}
+                style={{backgroundImage: "url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2000&auto=format&fit=crop')"}
             ></div>
             <div className="container relative">
-                <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground mb-4">
+                <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-gray-800 dark:text-foreground mb-4">
                     Your next meal, delivered.
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -126,13 +126,13 @@ const HomePage: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {featuredRestaurants.map(restaurant => (
                 <RestaurantCard key={restaurant.id} {...restaurant} />
-              ))নিং}
+              ))}
             </div>
           </div>
         </section>
         
         {/* Cuisine Categories Section (Placeholder) */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-card border-y">
             <div className="container">
                 <h2 className="text-3xl font-bold tracking-tight mb-8 text-center">Browse by Cuisine</h2>
                 <div className="flex flex-wrap justify-center gap-4">
@@ -140,7 +140,7 @@ const HomePage: React.FC = () => {
                         <Button key={cuisine} variant="outline" size="lg" onClick={() => navigate('/restaurant-listing', { state: { query: cuisine } })}>
                             {cuisine}
                         </Button>
-                    ))নিং}
+                    ))}\
                 </div>
             </div>
         </section>
@@ -152,7 +152,7 @@ const HomePage: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {popularRestaurants.map(restaurant => (
                 <RestaurantCard key={restaurant.id} {...restaurant} />
-                ))নিং}
+                ))}
                 {/* Adding a card as a simple placeholder */}
                 <Card className="flex items-center justify-center p-6 border-dashed">
                     <p className="text-muted-foreground text-center">More great restaurants coming soon!</p>
