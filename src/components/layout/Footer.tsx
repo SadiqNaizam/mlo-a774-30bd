@@ -21,12 +21,12 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-50 border-t">
+    <footer className="bg-muted border-t">
       <div className="container py-12">
         <div className="grid gap-8 md:grid-cols-3">
             <div className="flex flex-col items-start space-y-4">
                 <Link to="/" className="flex items-center gap-2">
-                    <UtensilsCrossed className="h-7 w-7 text-orange-500" />
+                    <UtensilsCrossed className="h-7 w-7 text-primary" />
                     <span className="text-xl font-bold">Delish Delivery</span>
                 </Link>
                 <p className="text-sm text-muted-foreground">
@@ -40,12 +40,12 @@ const Footer: React.FC = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={social.label}
-                                className="text-muted-foreground hover:text-orange-500"
+                                className="text-muted-foreground hover:text-primary"
                             >
                                 {social.icon}
                             </a>
                         </Button>
-                    ))}
+                    )))}
                 </div>
             </div>
             
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                             <li key={link.label}>
                                 <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary">{link.label}</Link>
                             </li>
-                        ))}
+                        ))নিং}
                     </ul>
                 </div>
                 <div className="space-y-4">
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                             <li key={link.label}>
                                 <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary">{link.label}</Link>
                             </li>
-                        ))}
+                        ))নিং}
                     </ul>
                 </div>
             </div>
