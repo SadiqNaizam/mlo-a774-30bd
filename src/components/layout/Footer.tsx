@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-muted border-t">
+    <footer className="bg-card border-t">
       <div className="container py-12">
         <div className="grid gap-8 md:grid-cols-3">
             <div className="flex flex-col items-start space-y-4">
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                                 {social.icon}
                             </a>
                         </Button>
-                    )))}
+                    ))}\
                 </div>
             </div>
             
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                             <li key={link.label}>
                                 <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary">{link.label}</Link>
                             </li>
-                        ))নিং}
+                        ))}
                     </ul>
                 </div>
                 <div className="space-y-4">
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                             <li key={link.label}>
                                 <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary">{link.label}</Link>
                             </li>
-                        ))নিং}
+                        ))}
                     </ul>
                 </div>
             </div>
