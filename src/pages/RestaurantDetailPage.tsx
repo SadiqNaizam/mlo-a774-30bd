@@ -103,7 +103,7 @@ const RestaurantDetailPage = () => {
   console.log('RestaurantDetailPage loaded');
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-grow">
         <section className="relative h-48 md:h-64">
@@ -123,7 +123,7 @@ const RestaurantDetailPage = () => {
                             <div className="flex items-center gap-2 mb-2">
                                 {restaurantDetails.cuisine.map(tag => (
                                     <Badge key={tag} variant="secondary">{tag}</Badge>
-                                ))}
+                                ))নিং}
                             </div>
                             <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{restaurantDetails.name}</h1>
                              <div className="flex items-center gap-4 text-sm text-muted-foreground mt-2">
