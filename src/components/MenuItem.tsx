@@ -108,7 +108,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
     <div className="flex items-start justify-between gap-4 p-4 border-b">
       <div className="flex-1">
         <h3 className="font-bold text-lg">{name}</h3>
-        <p className="text-sm text-gray-600 mt-1">{description}</p>
+        <p className="text-sm text-muted-foreground mt-1">{description}</p>
         <p className="text-md font-semibold mt-2">${price.toFixed(2)}</p>
       </div>
       <div className="flex-shrink-0">
@@ -142,12 +142,12 @@ const MenuItem: React.FC<MenuItemProps> = ({
                         {option.choices.map(choice => (
                           <div key={choice.id} className="flex items-center justify-between">
                             <Label htmlFor={choice.id} className="flex-1">{choice.name}</Label>
-                            <span className="text-sm text-gray-500 mr-4">
+                            <span className="text-sm text-muted-foreground mr-4">
                               {choice.priceModifier > 0 ? `+$${choice.priceModifier.toFixed(2)}` : ''}
                             </span>
                             <RadioGroupItem value={choice.id} id={choice.id} />
                           </div>
-                        ))}
+                        ))নিং}
                       </RadioGroup>
                     ) : (
                       <div className="space-y-2">
@@ -160,15 +160,15 @@ const MenuItem: React.FC<MenuItemProps> = ({
                                 />
                                 <Label htmlFor={choice.id}>{choice.name}</Label>
                             </div>
-                             <span className="text-sm text-gray-500">
+                             <span className="text-sm text-muted-foreground">
                                {choice.priceModifier > 0 ? `+$${choice.priceModifier.toFixed(2)}` : ''}
                              </span>
                           </div>
-                        ))}
+                        ))নিং}
                       </div>
                     )}
                   </div>
-                ))}
+                ))নিং}
               </div>
               <DialogFooter className="flex-col sm:flex-row sm:justify-between items-center gap-4">
                 <div className="flex items-center gap-2">
